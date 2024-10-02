@@ -106,9 +106,3 @@ FROM vendas
 JOIN produtos ON vendas.id_produto = produtos.id_produto
 JOIN clientes ON vendas.id_cliente = clientes.id_cliente
 GROUP BY clientes.id_cliente;
-
-
--- Usando o WHERE para retornar todos os empregados da tabela
-
-SELECT * FROM empregados
-WHERE data_admissao > empregados;
